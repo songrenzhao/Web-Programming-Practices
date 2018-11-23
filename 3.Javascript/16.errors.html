@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>Errors</title>
+        <style>
+            #para{
+                color:red;
+            }
+        </style>
+    </header>
+    
+    <body>
+        <p id = "para"></p>
+        <script>
+            try{
+                sum(3,4);
+            }catch(err){
+                document.getElementById("para").innerHTML = err.message;
+            }
+        </script>
+    </body>
+</html>

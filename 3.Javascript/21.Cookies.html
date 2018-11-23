@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <meta charset="utf-8">
+        <title>Cookies</title>
+    </header>
+    
+    <body>
+        <p id = "myPara">Javascript</p>
+        <script>
+            document.cookie = "username = song";
+            document.cookie = "age = 1";
+            document.cookie = "country = UK";
+            window.alert(document.cookie);
+            var cookie = document.cookie.split(';');
+            window.alert(cookie);
+            for(var i = 0; i < cookie.length; i++){
+                document.getElementById("myPara").innerHTML += "<br />" + cookie[i];
+            }
+            window.alert(document.cookie);
+        </script>
+    </body>
+</html>

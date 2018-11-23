@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <meta charset="utf-8">
+        <title>Window and Screen</title>
+        <style>
+            #div1{
+                background-color: yellow;
+            }
+            #div2{
+                background-color: red;
+            }
+            #div3{
+                background-color: aqua;
+            }
+            #div4{
+                background-color: brown;
+            }
+            .equalbox{
+                float : left;
+                margin-left: 5px;
+            }
+        </style>
+    </header>
+    
+    <body>
+        <div id = "div1" class = "equalbox">Div 1</div>
+        <div id = "div2" class = "equalbox">Div 2</div>
+        <div id = "div3" class = "equalbox">Div 3</div>
+        <div id = "div4" class = "equalbox">Div 4</div>
+        <script>
+            var windowHeight = window.innerHeight;
+            //window.alert(windowHeight);
+            
+            var screenWidth = window.screen.width;
+            //window.alert(screenWidth);
+            
+            //var availableScreenHeight = window.screen.availHeight;
+            //window.alert(availableScreenHeight);
+            
+            for(var i = 1; i < 5; i++){
+                document.getElementById("div" + i).style.width = window.innerWidth/4-10+ "px";
+                document.getElementById("div" + i).style.height = window.innerHeight-10+ "px";
+            }
+        </script>
+    </body>
+</html>

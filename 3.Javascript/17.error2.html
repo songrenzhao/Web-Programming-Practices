@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>Errors</title>
+        <style>
+            #error{
+                color:red;
+            }
+        </style>
+    </header>
+    
+    <body>
+        <p>Your password should contain at least 6 characters, 1 number and 1 capital letter:</p>
+        <p>Enter Password: <br /><input id = "password" type = "password"></p>
+        <p>Re-Enter Password: <br /><input id = "password2" type = "password"></p>
+        <p id = "error"></p>
+        <button id = "submit">Submit</button>
+        <script>
+            document.getElementById("submit").onclick=function(){
+                var password = document.getElementById("password").value;
+                var password2 = document.getElementById("password2").value;
+                var errorMsg = document.getElementById("error");
+                var errorTOThrow = "";
+                try{
+                    if(password.length < 6)
+                        errorTOThrow += "<br /> Password too short.";
+                    if(/[A-Z]/g.test(password) == false)
+                        errorTOThrow += "<br /> Password should include at least one capital letter.";
+                    if(/\d/g.test(password) == false)
+                        errorTOThrow += "<br /> Password should include at least one digit.";
+                    if(password != password2)
+                        errorTOThrow += "<br /> Password should match.";
+                    throw errorTOThrow;
+                }catch(err){
+                    errorMsg.innerHTML = err.message;
+                }
+            }
+        </script>
+    </body>
+</html>
