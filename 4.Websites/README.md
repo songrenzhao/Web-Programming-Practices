@@ -1,1 +1,1 @@
-# Pratice Websites that I built using HTML/CSS/JS
+# Practice Websites that I built using HTML/CSS/JS
