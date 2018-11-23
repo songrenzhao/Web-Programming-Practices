@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Style Lists</title>
+        <style>
+            ul.list1{
+                list-style: upper-roman;
+                /*list-style-image: url(Images/Hopetoun_falls.jpg);*/
+            }
+            
+            ul.list2{
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                
+            }
+            ul.list2 li{
+                background-image: url(Images/Hopetoun_falls.jpg);
+                background-repeat: no-repeat;
+                padding-left: 30px;
+                background-position: 0px center;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <p>A list of European capitals</p>
+        <ul class = "list1">
+            <li>Paris</li>
+            <li>Madrid</li>
+            <li>London</li>
+        </ul>
+        <ul class = "list2">
+            <li>Paris</li>
+            <li>Madrid</li>
+            <li>London</li>
+        </ul>
+    </body>
+</html>

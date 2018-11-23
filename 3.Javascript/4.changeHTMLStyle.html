@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Change HTML Style</title>
+        <style>
+            .bluebox{
+                background-color: blue;
+                color: white;
+                height: 100px;
+                width: auto;
+            }
+            .yellowbox{
+                background-color: antiquewhite;
+                color: black;
+                height: 100px;
+                width: auto;
+            }
+            .greenbox{
+                background-color: #31af37;
+                height: 100px;
+                width: auto;
+            }
+            .great{
+                background-color: brown;
+            }
+        </style>
+    </head>
+    <body>
+        <div class = "bluebox" id = "facebook">
+            <p>Facebook is <span class = "great">great</span></p>
+        </div>
+        <div class = "yellowbox" id = "apple">
+            <p>Apple</p>
+        </div>
+        <div class = "greenbox">
+            <p>Microsoft</p>
+        </div>
+        <button id="button1">Change facebook style</button>
+        <button id="button2">Change apple style</button>
+        <script>
+            document.getElementById("button1").onclick=function(){
+                document.getElementById("facebook").style.width = '200px'
+                document.getElementById("facebook").style.backgroundColor = 'rgba(26,203,135,0.922)';
+            }
+            document.getElementById("button2").ondblclick=function(){
+                document.getElementById("apple").style.fontFamily="monospace";
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <meta charset="utf-8">
+        <title>Objects Using New</title>
+    </header>
+    
+    <body>
+        <p>Javascript</p>
+        <script>
+            function phone(make, model, warranty, color){
+                this.make = make;
+                this.model = model;
+                this.warranty = warranty;
+                this.color = color;
+                this.extendedWarranty = function(x){
+                    this.warranty += x;
+                }
+            }
+            var myPhone = new phone("OnePlus", "6T", 1, "Black");
+            window.console.log(myPhone);
+            myPhone.extendedWarranty(5)
+            window.console.log(myPhone.warranty)
+        </script>
+    </body>
+</html>

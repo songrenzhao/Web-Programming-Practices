@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <meta charset="utf-8">
+        <title>Loop For</title>
+    </header>
+    
+    <body>
+        <p id = "myPara">Javascript</p>
+        <script>
+//            document.getElementById("myPara").innerHTML += "<br />" + 0;
+//            document.getElementById("myPara").innerHTML += "<br />" + 1;
+//            document.getElementById("myPara").innerHTML += "<br />" + 2;
+//            document.getElementById("myPara").innerHTML += "<br />" + 3;
+//            document.getElementById("myPara").innerHTML += "<br />" + 4;
+            for(var i = 0; i < 5; i++)
+                document.getElementById("myPara").innerHTML += "<br />" + i;
+            
+            var shoppingList = ["Bread", "Milk", "Eggs"];
+            for(var i = 0; i < shoppingList.length; i++){
+                document.getElementById("myPara").innerHTML += "<br />" + shoppingList[i];
+            }
+        </script>
+    </body>
+</html>

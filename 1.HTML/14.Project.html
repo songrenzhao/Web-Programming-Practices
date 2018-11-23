@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!----> <!--Comments-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>forms</title>
+    </head>
+    <body>
+        <form>
+            <label for = "address">Address</label>
+            <input type ="text" name = "address" id = "address" placeholder="Address" maxlength="30" size="30">
+            
+            <br>
+            
+            <label for = "postcode">Postcode</label>
+            <input type = "text" name = "postcode" id = "postcode" placeholder="Postcode" maxlength="30" size="30">
+            
+            <br>
+            
+            <label for = "city">City</label>
+            <input type = "text" name = "city" id = "city" placeholder="City" maxlength="30" size="30">
+            
+            <br>
+            
+            <p>Choose your shipping method</p>
+            <select name = "shipping" id = "shipping">
+                <option value = "Free super save shipping">Super fast saver shipping</option>
+                <option value = "Free two day shipping">Free two day shipping</option>
+                <option value = "Free three day shipping">Free three day shipping</option>
+            </select>
+            
+            <p>Choose your payment method</p>
+            <label for="Paypal">Paypal<input type = "radio"></label>
+            <label for="Debit Card">Debit Card<input type = "radio"></label>
+            <label for="Credit Card">Credit Card<input type = "radio"></label>
+            
+            <br>
+            
+            <label for="Comments">Comments</label>
+            <textarea rows="4" cols="40" name="comments" id="comments"></textarea>
+            
+            <br>
+            
+            <label for="signup" name="signup" id="signup">
+                Sign me up for email notification
+                <input type="checkbox" name = "email updates" checked>
+            </label>
+            <label for="save" name="save" id="save">
+                Save my information
+                <input type="checkbox" name = "save" checked>
+            </label>
+            
+            <br>
+            
+            <input type="submit" name="submit" id="submit">
+        </form>
+    </body>
+</html>

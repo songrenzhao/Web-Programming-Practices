@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <meta charset="utf-8">
+        <title>Objects</title>
+    </header>
+    
+    <body>
+        <p>Javascript</p>
+        <script>
+            var myPhone = {
+                make : "Apple",
+                model : "IPhone XM",
+                warrenty : 12,
+                color : "white"
+            };
+            window.console.log(myPhone);
+            delete myPhone.warrenty;
+            window.console.log(myPhone);
+            window.console.log(myPhone.model);
+            var otherPhone = myPhone;
+            otherPhone.model = "One Plus";
+            window.console.log(myPhone.model);
+        </script>
+    </body>
+</html>

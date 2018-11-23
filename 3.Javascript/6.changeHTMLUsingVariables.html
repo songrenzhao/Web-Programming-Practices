@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>variables and data types</title>
+        <style>
+            .bluebox{
+                background-color: blue;
+                color: white;
+                height: 100px;
+                width: auto;
+            }
+            .yellowbox{
+                background-color: antiquewhite;
+                color: black;
+                height: 100px;
+                width: auto;
+            }
+            .greenbox{
+                background-color: #31af37;
+                height: 100px;
+                width: auto;
+            }
+            .great{
+                background-color: brown;
+            }
+        </style>
+    </head>
+    <body>
+        <div class = "bluebox" id = "facebook">
+            <p>Facebook is <span class = "great">great</span></p>
+        </div>
+        <div class = "yellowbox" id = "apple">
+            <p>Apple</p>
+        </div>
+        <div class = "greenbox">
+            <p>Microsoft</p>
+        </div>
+        <button id="button1">Change facebook style</button>
+        <button id="button2">Change apple style</button>
+        <script>
+            var color = "rgb(18,149,68)";
+            document.getElementById("button1").onclick=function(){
+                document.getElementById("facebook").style.backgroundColor=color;
+            }
+            document.getElementById("button2").onclick=function(){
+                var x = Math.round(Math.random()*256+1);
+                var y = Math.round(Math.random()*256+1);
+                var z = Math.round(Math.random()*256+1);
+                var appleColor = 'rgb('+x+','+y+','+z+')';
+                document.getElementById("apple").style.backgroundColor=appleColor;
+                document.getElementById("apple").innerHTML=appleColor;
+            }
+            
+        </script>
+    </body>
+</html>
